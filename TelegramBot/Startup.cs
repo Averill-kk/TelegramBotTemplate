@@ -35,6 +35,7 @@ namespace TelegramBot
             }
 
             app.UseMvc();
+            Bot.GetBotClientAsync().Wait();
         }
     }
 }
